@@ -68,6 +68,8 @@ Install requests
 
 Create a Python script
 ```
+import requests
+
 token = '9a78a566-e388-46be-9811-ceed0a2904e6'
 
 port = '8088'
