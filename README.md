@@ -1,7 +1,7 @@
 
 
 
-<link href="style.css" rel="stylesheet"></link>
+
 
 # How to Index HTTP events in Splunk
 
@@ -10,17 +10,20 @@
 
 Select 'Settings' > 'Add Data'
 
-<img align="middle" width="500" src="screenshot1.png">
+<img display="flex" justify-content="center" width="300px" src="screenshot1.png">
 
-![image](screenshot1.png)
 
 Select 'Monitor'
-![image](screenshot2.png)
+
+<img display="flex" justify-content="center" width="300px" src="screenshot2.png">
 
 Select 'HTTP Event Collector' > Add a Source Name > Select 'Next'
-![image](screenshot3.png)
+
+<img display="flex" justify-content="center" width="300px" src="screenshot3.png">
 
 Select 'Create a new index', Add a index name and select 'Save'
-Add the new index to 'Allowed Indexes' 
-![image](screenshot4.png)
+
+Add the new index to 'Allowed Indexes'
+
+<img display="flex" justify-content="center" width="300px" src="screenshot4.png">
 
