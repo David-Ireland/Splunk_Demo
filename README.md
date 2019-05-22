@@ -10,7 +10,7 @@
 
 Select 'Settings' > 'Add Data'
 
-<img align="right" width="500" src="screenshot1.png">
+<img align="middle" width="500" src="screenshot1.png">
 
 ![image](screenshot1.png)
 
