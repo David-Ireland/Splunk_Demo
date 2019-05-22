@@ -1,7 +1,7 @@
 
 
 
-(setq markdown-css-paths '("style.css"))
+<link href="style.css" rel="stylesheet"></link>
 
 # How to Index HTTP events in Splunk
 
