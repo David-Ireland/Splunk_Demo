@@ -11,14 +11,14 @@
 Select 'Settings' > 'Add Data'
 
 
-![screenshot1](screenshot1.png)
+![screenshot1](screenshot1.png){float:right; width:300px}
 
 Select 'Monitor'
-![screenshot2](screenshot2.png)
+![screenshot2](screenshot2.png){float:right; width:300px}
 
 Select 'HTTP Event Collector' > Add a Source Name > Select 'Next'
-![screenshot3](screenshot3.png)
+![screenshot3](screenshot3.png){float:right; width:300px}
 
 Select 'Create a new index', Add a index name and select 'Save'
 Add the new index to 'Allowed Indexes' 
-![screenshot4](screenshot4.png)
+![screenshot4](screenshot4.png){float:right; width:300px}
