@@ -1,4 +1,4 @@
-img[alt=image] {
+img {
 	float:right;
-	width:300px
+	width:300px !important;
 }
