@@ -49,7 +49,40 @@ Make sure HTTP port number is 8088
 <img width="600px" src="screenshots/screenshot6.png">
 
 
+## Curl event to Splunk
+
+Curl from terminal with the format
+```curl -k $URI$:$PORT$/services/collector -H 'Authorization: Splunk $TOKEN$' -d '{"event": {$EVENT$} }'```
+
+e.g.
+```curl -k http://localhost:8088/services/collector -H 'Authorization: Splunk 9a78a566-e388-46be-9811-ceed0a2904e6' -d '{"event": {"String Test" : "This is from a terminal curl"} }'```
+
+Search the Splunk for the event
+
+## Post events from python
+
+Prerequisite: Python installed
+
+Install requests
+```pip install requests```
+
+Create a Python script
+```
+token = '9a78a566-e388-46be-9811-ceed0a2904e6'
+
+port = '8088'
+
+uri = 'http://localhost:' + port + '/services/collector'
+
+header = {'Authorization': 'Splunk ' + token} 
+
+payload = '{"event": {"String Test" : "This is from a python script"} }'
+
+print(requests.post(uri, data=payload, headers=header).text)
+```
+Run the script and search the Splunk index for events
 
 
 
-Create a Python script 
+
+
