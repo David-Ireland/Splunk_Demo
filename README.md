@@ -9,6 +9,8 @@
 ## Configure the Splunk instance to index events
 
 Select 'Settings' > 'Add Data'
+
+
 ![screenshot1](screenshot1.png)
 
 Select 'Monitor'
