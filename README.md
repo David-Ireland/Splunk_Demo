@@ -1,7 +1,7 @@
 
 
 
-
+(setq markdown-css-paths '("style.css"))
 
 # How to Index HTTP events in Splunk
 
@@ -23,7 +23,3 @@ Select 'Create a new index', Add a index name and select 'Save'
 Add the new index to 'Allowed Indexes' 
 ![image](screenshot4.png)
 
-img[alt=image] {
-	float:right;
-	width:300px
-}
