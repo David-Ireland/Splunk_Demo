@@ -113,7 +113,11 @@ require([
 
         var search1 = new SearchManager({
             "id": "search1",
-            "search": "index = * | head 1 | eval value1 = 1 | eval value2 = 2 | eval value3 = 3 | eval value4 = 4 | table value1 value2 value3 value4",
+            
+            // ----------------------------- TODO -----------------------------  //
+
+            // Change the to search the index and events you are intrested in 
+            "search": "index=judy | search LED1 = * | head 1 | table LED1 LED2 LED3 LED4",
             "latest_time": "rtnow",
             "status_buckets": 0,
             "sample_ratio": null,
@@ -126,6 +130,16 @@ require([
             },
             "runWhenTimeIsUndefined": false
         }, {tokens: true, tokenNamespace: "submitted"});
+
+
+        var search1_data = search1.data("preview");
+        search1_data.on("data", function() {
+
+            // ----------------------------- TODO -----------------------------  //
+            // Show this data on the front end
+            
+            console.log(search1_data.data().rows);
+        });
 
         //
         // SPLUNK LAYOUT
